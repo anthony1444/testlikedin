@@ -1,0 +1,39 @@
+<div class="container">
+  <app-left-sidebar style="width: 20%"></app-left-sidebar>
+
+  <div class="main-content">
+    <div class="create-post">
+      <div class="create-post-input">
+        <img src="assets/user-1.png" />
+        <textarea
+          rows="2"
+          placeholder="Escribir un Post"
+          [(ngModel)]="postService.textPost"
+        ></textarea>
+      </div>
+      <div class="create-post-links">
+        <li><img src="assets/photo.png" />Foto</li>
+        <li><img src="assets/video.png" />Video</li>
+        <li><img src="assets/event.png" />Evento</li>
+        <li (click)="postService.addPost()">Escribir un articulo</li>
+      </div>
+    </div>
+    <div class="sort-by">
+      <hr />
+      <p>
+        Ordernar por :
+        <span (click)="postService.toggleSortOrder()"
+          >Desc
+          <img
+            src="{{
+              sortOrder == 'asc'
+                ? 'assets/down-arrow.png'
+                : 'assets/up-arrow.png'
+            }}"
+        /></span>
+      </p>
+    </div>
+    <app-posts></app-posts>
+  </div>
+  <app-right-sidebar style="width: 20%"></app-right-sidebar>
+</div>

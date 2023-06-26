@@ -1,0 +1,8 @@
+<div class="post" *ngFor="let post of postService.posts.reverse()">
+  <app-post-author [post]="post"></app-post-author>
+  <p>{{ post.description }}</p>
+  <img src="{{ post.image }}" width="100%" />
+
+  <app-post-stats [post]="post"></app-post-stats>
+ <app-post-activity [post]="post"></app-post-activity>
+</div>

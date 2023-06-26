@@ -1,0 +1,44 @@
+.sidebar-news{
+  background: #fff;
+  padding: 10px 25px;
+}
+.sidebar-news h6{
+
+  color:#777;
+  padding-left: 15px;
+  padding-top: 0;
+  margin-top: 0;
+}
+.sidebar-news h5{
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.info-icon{
+  width: 15px;
+  float: right;
+  margin-top: 15px;
+}
+
+.sidebar-news h3{
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0 30px;
+}
+.sidebar-news a{
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+.sidebar-news span{
+  font-size: 12px;
+}
+
+.sidebar-news .read-more-link{
+ color: #045be6;
+ font-weight: 500;
+ margin: 20px 0 10px;
+}
